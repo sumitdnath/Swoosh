@@ -18,7 +18,7 @@
             android:layout_height="29dp" app:srcCompat="@drawable/swooshlogo"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="24dp" app:layout_constraintEnd_toEndOf="parent" android:id="@+id/imageView2"
-            android:scaleType=" "/>
+    />
     <TextView
             android:text="GO ALL IN"
             android:layout_width="wrap_content"
