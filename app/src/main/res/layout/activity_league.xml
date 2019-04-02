@@ -7,4 +7,65 @@
         android:layout_height="match_parent"
         tools:context=".LeagueActivity">
 
+    <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp" app:srcCompat="@drawable/desiredleaguebg"
+            android:id="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintVertical_bias="0.0"
+            android:scaleType="centerCrop" app:layout_constraintHorizontal_bias="0.0"/>
+    <ImageView
+            android:layout_width="88dp"
+            android:layout_height="29dp" app:srcCompat="@drawable/swooshlogo"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="24dp" app:layout_constraintEnd_toEndOf="parent" android:id="@+id/imageView2"
+    />
+    <TextView
+            android:text="Desired League"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/textView2" android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" android:fontFamily="@font/montserrat"
+            android:textSize="18sp" android:textColor="@color/colorAccent" android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp" android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
+        <ToggleButton
+                android:text="ToggleButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" tools:layout_editor_absoluteY="203dp"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/toggleButton3" app:layout_constraintHorizontal_bias="0.47" android:textOff="Mens"
+                android:textOn="Mens" tools:text="Mens" android:background="@drawable/swoosh_toggle"
+                android:textColor="@color/colorAccent"/>
+        <ToggleButton
+                android:text="ToggleButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/toggleButton4" android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp" android:textOff="Womens" android:textOn="Mens" tools:text="Mens"
+                android:background="@drawable/swoosh_toggle" android:textColor="@color/colorAccent"/>
+        <ToggleButton
+                android:text="ToggleButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/toggleButton5" android:textOff="Co-Ed"
+                android:textOn="Co-Ed" tools:text="Co-Ed" android:background="@drawable/swoosh_toggle"
+                android:textColor="@color/colorAccent"/>
+    </LinearLayout>
+    <Button
+            android:text="NEXT"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button2" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            android:layout_marginBottom="16dp" app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@drawable/swoosh_button" android:textColor="@color/colorAccent"
+            android:fontFamily="@font/montserrat" android:textSize="14sp"/>
 </android.support.constraint.ConstraintLayout>
