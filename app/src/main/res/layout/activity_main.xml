@@ -12,15 +12,16 @@
             android:id="@+id/imageView" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" android:scaleType="centerCrop"
-            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="0.0"/>
+            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="0.0"
+            android:contentDescription="@string/background_image"/>
     <ImageView
             android:layout_width="88dp"
             android:layout_height="29dp" app:srcCompat="@drawable/swooshlogo"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="24dp" app:layout_constraintEnd_toEndOf="parent" android:id="@+id/imageView2"
-    />
+            android:contentDescription="@string/app_logo"/>
     <TextView
-            android:text="GO ALL IN"
+            android:text="@string/go_all_in"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textView"
@@ -30,7 +31,7 @@
             app:layout_constraintTop_toBottomOf="@+id/imageView2" app:layout_constraintHorizontal_bias="0.497"
             android:layout_marginTop="80dp"/>
     <TextView
-            android:text="ON GOING ALL OUT"
+            android:text="@string/on_going_all_out"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
@@ -38,7 +39,7 @@
             android:fontFamily="@font/montserrat" android:textSize="20sp" app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintTop_toBottomOf="@+id/textView"/>
     <TextView
-            android:text="Find a team in your city, and dominate the league"
+            android:text="@string/find_a_team_in_your_city_and_dominate_the_league"
             android:layout_width="264dp"
             android:layout_height="56dp"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
@@ -47,11 +48,11 @@
             app:layout_constraintHorizontal_bias="0.496" android:layout_marginTop="42dp"
             app:layout_constraintTop_toBottomOf="@+id/textView3"/>
     <Button
-            android:text="GET STARTED"
+            android:text="@string/get_started"
             android:layout_width="0dp"
             android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginBottom="16dp" android:id="@+id/button" android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp" android:id="@+id/getStarted" android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp" android:fontFamily="@font/montserrat" android:textSize="14sp"
             android:textColor="@color/colorAccent" android:background="@drawable/swoosh_button"/>
 </android.support.constraint.ConstraintLayout>
