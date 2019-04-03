@@ -13,4 +13,8 @@
     </string>
     <string name="get_started">GET STARTED</string>
     <string name="go_all_in">GO ALL IN</string>
+    <string name="i_am_a">I am a :</string>
+    <string name="beginer">Beginer</string>
+    <string name="baller">Baller</string>
+    <string name="finish">FINISH</string>
 </resources>

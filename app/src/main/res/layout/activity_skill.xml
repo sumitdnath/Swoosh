@@ -12,15 +12,16 @@
             android:id="@+id/imageView4" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent" android:scaleType="centerCrop"/>
+            app:layout_constraintBottom_toBottomOf="parent" android:scaleType="centerCrop"
+            android:contentDescription="@string/background_image"/>
     <ImageView
             android:layout_width="88dp"
             android:layout_height="29dp" app:srcCompat="@drawable/swooshlogo"
             android:id="@+id/imageView2"
             android:contentDescription="@string/app_logo" tools:layout_editor_absoluteY="24dp"
-            tools:layout_editor_absoluteX="162dp"/>
+            tools:layout_editor_absoluteX="162dp" tools:ignore="MissingConstraints"/>
     <TextView
-            android:text="I am a :"
+            android:text="@string/i_am_a"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textView5" android:layout_marginTop="44dp"
@@ -36,27 +37,29 @@
             app:layout_constraintTop_toBottomOf="@+id/textView5" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="8dp">
         <ToggleButton
-                android:text="Beginer"
+                android:text="@string/beginer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" android:id="@+id/toggleButton2" android:layout_weight="1"
                 android:background="@drawable/swoosh_toggle" android:textColor="@color/colorAccent"
-                android:textOn="Beginer" android:textOff="Beginer"
-                android:layout_marginRight="16dp"/>
+                android:textOn="@string/beginer" android:textOff="@string/beginer"
+                android:layout_marginEnd="16dp" android:textSize="14sp"/>
         <ToggleButton
-                android:text="Baller"
+                android:text="@string/baller"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" android:id="@+id/toggleButton6" android:layout_weight="1"
                 android:background="@drawable/swoosh_toggle" android:textColor="@color/colorAccent"
-                android:textOff="Baller" android:textOn="Baller"
-                android:layout_marginLeft="16dp"/>
+                android:textOff="@string/baller" android:textOn="@string/baller"
+                android:layout_marginStart="16dp"/>
     </LinearLayout>
     <Button
-            android:text="Button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:text="@string/finish"
+            android:layout_width="0dp"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            android:id="@+id/button11" android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+            android:id="@+id/button11" android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp" android:background="@drawable/swoosh_button" android:fontFamily="@font/montserrat"
+            android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
 
 
 </android.support.constraint.ConstraintLayout>
