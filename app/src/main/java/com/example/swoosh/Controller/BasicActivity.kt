@@ -1,6 +1,5 @@
-package com.example.swoosh
+package com.example.swoosh.Controller
 
-import android.annotation.TargetApi
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
